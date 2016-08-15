@@ -1,0 +1,9 @@
+- hosts: production 
+  remote_user: user
+  vars:
+    app_name: geonode_live 
+    github_user: geonode_live
+    server_name: 0.0.0.0
+    deploy_user: user 
+  roles:
+     - { role: ortelius.geonode }
